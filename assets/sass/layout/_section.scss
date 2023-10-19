@@ -1,0 +1,302 @@
+#about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f4623a;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  .container {
+    .about-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      font-family: "Merriweather Sans", sans-serif;
+      box-sizing: border-box;
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+      .line {
+        height: 3px;
+        width: 52px;
+        margin: 1.5rem auto;
+        background-color: #f4eeec;
+        border-top: 1px solid black;
+      }
+      .a-title {
+        font-size: 1.15rem;
+        margin-bottom: 3rem !important;
+        color: #fff;
+        max-width: 800px;
+        width: 100%;
+      }
+      button {
+        padding: 1.25rem 2.25rem;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 10rem;
+        background-color: #fff;
+        color: #000000;
+      }
+    }
+  }
+}
+
+/*  Service section */
+
+#service {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 50px 0;
+  text-align: center;
+  .container {
+    .s-content {
+      font-family: "Merriweather Sans", sans-serif;
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+      .line {
+        height: 3px;
+        width: 52px;
+        margin: 24px auto;
+        background-color: #f4623a;
+        border-top: 1px solid black;
+      }
+      .cart {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin: 80px 0;
+        gap: 16px;
+        .item {
+          padding: 15px;
+          .icon {
+            font-size: 2.5rem !important;
+            color: #f4623a;
+          }
+          h3 {
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*  Portfolio section */
+#portfolio {
+  box-sizing: border;
+  max-width: 100%;
+  text-align: center;
+  .p-content {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    max-width: 100%;
+    .img {
+      width: 100%;
+      position: relative;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      .hover {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(244, 98, 58, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        display: none;
+      }
+      &:hover {
+        .hover {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+/*  Download section */
+#download {
+  font-family: "Merriweather Sans", sans-serif;
+  padding: 50px 0;
+  text-align: center;
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  .container {
+    .d-content {
+      h2 {
+        font-size: 2rem;
+      }
+      button {
+        padding: 1.25rem 2.25rem;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 10rem;
+        background-color: #fff;
+        color: #000000;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+/*  Contact section */
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 128px 0;
+  font-family: "Merriweather Sans", sans-serif;
+  .container {
+    .c-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+      .line {
+        height: 3px;
+        width: 52px;
+        margin: 24px auto;
+        background-color: #f4623a;
+        border-top: 1px solid black;
+      }
+      p {
+        margin-bottom: 48px;
+        color: #6c757d;
+        width: 50%;
+      }
+      .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 25px;
+        input {
+          width: 50%;
+          height: 50px;
+          height: 3.5rem;
+          line-height: 1.25;
+          border-radius: 10px;
+          border: 1px solid #ced4da;
+          padding: 15px;
+        }
+        button {
+          width: 50%;
+          padding: 20px;
+          border-radius: 25px;
+          border: 1px solid #ced4da;
+          color: white;
+          background-color: rgb(244, 98, 58, 0.7);
+        }
+      }
+      .p-logo {
+        margin-top: 50px;
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+/* Responsibility 992px */
+
+@media screen and (max-width: 992px) {
+  #service {
+    .container {
+      .s-content {
+        .cart {
+          display: grid;
+          grid-template-columns: auto auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #portfolio {
+    .p-content {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      grid-template-columns: auto auto;
+      max-width: 100%;
+    }
+  }
+}
+
+/* Responsibility 768px */
+@media screen and (max-width: 768px) {
+  #service {
+    .container {
+      .s-content {
+        .cart {
+          display: grid;
+          grid-template-columns: auto;
+        }
+      }
+    }
+  }
+  #portfolio {
+    .p-content {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      grid-template-columns: auto;
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+
+  #contact {
+    .container {
+      .c-content {
+        .form {
+            padding: 0 20px;
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
